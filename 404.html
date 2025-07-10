@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Trang Chính</title>
+  <script>
+    // 👉 TỰ ĐỘNG XÓA COOKIE KHI LOAD LẠI TRANG
+    window.onload = function() {
+      // Lặp qua tất cả cookie và xóa từng cái
+      document.cookie.split(";").forEach(function(cookie) {
+        const name = cookie.split("=")[0].trim();
+        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/;";
+      });
+    };
+
+    // 👉 CHUYỂN ĐẾN 404.html NẾU LINK KHÔNG ĐÚNG
+    window.addEventListener('error', function (e) {
+      // Nếu là lỗi dạng "file not found" hoặc "link sai"
+      if (e.target.tagName === "SCRIPT" || e.target.tagName === "LINK" || e.target.tagName === "IMG") {
+        window.location.href = "/404.html";
+      }
+    }, true);
+  </script>
+</head>
+<body>
+  <h1>Trang Chính</h1>
+  <p>Chào mừng đến với website!</p>
+</body>
+</html>
