@@ -65,8 +65,18 @@
 </head>
 <body>
   <h1>404</h1>
-  <h2>Oops! Không tìm thấy trang rồi 😢</h2>
-  <p>Trang bạn tìm có thể đã bị xóa, hoặc đường dẫn bị sai mất tiêu...</p>
+  <h2>Trang không tồn tại rồi 😢</h2>
+  <p>Rất tiếc! Đường dẫn bạn vừa truy cập không tồn tại.</p>
   <a href="/">🔙 Quay về trang chủ</a>
+
+  <script>
+    // ✅ XÓA TOÀN BỘ COOKIE KHI LOAD TRANG (ẨN - KHÔNG GHI RA CONSOLE)
+    window.onload = function () {
+      document.cookie.split(";").forEach(function(cookie) {
+        const name = cookie.split("=")[0].trim();
+        document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+      });
+    };
+  </script>
 </body>
 </html>
