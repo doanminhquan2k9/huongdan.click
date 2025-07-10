@@ -2,28 +2,71 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Trang Chính</title>
-  <script>
-    // 👉 TỰ ĐỘNG XÓA COOKIE KHI LOAD LẠI TRANG
-    window.onload = function() {
-      // Lặp qua tất cả cookie và xóa từng cái
-      document.cookie.split(";").forEach(function(cookie) {
-        const name = cookie.split("=")[0].trim();
-        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/;";
-      });
-    };
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 - Không tìm thấy trang</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #fceabb, #f8b500);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+      color: #333;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
 
-    // 👉 CHUYỂN ĐẾN 404.html NẾU LINK KHÔNG ĐÚNG
-    window.addEventListener('error', function (e) {
-      // Nếu là lỗi dạng "file not found" hoặc "link sai"
-      if (e.target.tagName === "SCRIPT" || e.target.tagName === "LINK" || e.target.tagName === "IMG") {
-        window.location.href = "/404.html";
-      }
-    }, true);
-  </script>
+    h1 {
+      font-size: 120px;
+      margin: 0;
+      color: #ff3c3c;
+      animation: bounce 1.2s ease infinite alternate;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin: 10px 0;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 20px 0;
+    }
+
+    a {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #fff;
+      color: #f57c00;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    a:hover {
+      background-color: #f57c00;
+      color: #fff;
+    }
+
+    @keyframes bounce {
+      from { transform: translateY(0); }
+      to { transform: translateY(-10px); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
 </head>
 <body>
-  <h1>Trang Chính</h1>
-  <p>Chào mừng đến với website!</p>
+  <h1>404</h1>
+  <h2>Oops! Không tìm thấy trang rồi 😢</h2>
+  <p>Trang bạn tìm có thể đã bị xóa, hoặc đường dẫn bị sai mất tiêu...</p>
+  <a href="/">🔙 Quay về trang chủ</a>
 </body>
 </html>
