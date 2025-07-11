@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng Ký Nhận Ngay 100K - Chương Trình Đối Tác 2025</title>
+    <title>Đăng Ký Nhận Ngay 100K - Ưu Đãi Đặc Biệt 2025</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary: #4361ee;
-            --secondary: #3f37c9;
-            --accent: #4cc9f0;
-            --success: #4ade80;
-            --warning: #fbbf24;
-            --danger: #f87171;
-            --dark: #1e293b;
-            --light: #f8fafc;
-            --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
+            --primary: #3B82F6;
+            --primary-dark: #2563EB;
+            --primary-light: #93C5FD;
+            --secondary: #10B981;
+            --accent: #F59E0B;
+            --danger: #EF4444;
+            --dark: #1F2937;
+            --darker: #111827;
+            --light: #F9FAFB;
+            --gray: #6B7280;
+            --gradient: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            --gradient-accent: linear-gradient(135deg, var(--accent), #F97316);
         }
         
         * {
@@ -28,8 +31,8 @@
         }
         
         body {
-            font-family: 'Nunito', sans-serif;
-            background-color: #f1f5f9;
+            font-family: 'Inter', sans-serif;
+            background-color: #F3F4F6;
             color: var(--dark);
             line-height: 1.6;
         }
@@ -44,11 +47,12 @@
         .hero {
             background: var(--gradient);
             color: white;
-            padding: 60px 0 40px;
-            border-radius: 0 0 20px 20px;
+            padding: 80px 0 60px;
             position: relative;
             overflow: hidden;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+            margin-bottom: 30px;
         }
         
         .hero::before {
@@ -59,43 +63,46 @@
             width: 100%;
             height: 100%;
             background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjA1KSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNwYXR0ZXJuKSIvPjwvc3ZnPg==');
-            opacity: 0.4;
+            opacity: 0.3;
         }
         
         .hero-content {
             position: relative;
             z-index: 1;
             text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
         }
         
         .logo {
-            font-size: 2.5rem;
+            font-size: 3rem;
             font-weight: 700;
-            margin-bottom: 10px;
-            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 15px;
+            font-family: 'Poppins', sans-serif;
             text-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         
         .tagline {
-            font-size: 1.4rem;
-            opacity: 0.9;
-            margin-bottom: 20px;
-            font-weight: 600;
+            font-size: 1.5rem;
+            opacity: 0.95;
+            margin-bottom: 25px;
+            font-weight: 500;
         }
         
         /* Promo Banner */
         .promo-banner {
-            background: linear-gradient(to right, #ff6b6b, #ff8e8e);
+            background: var(--gradient-accent);
             color: white;
-            padding: 18px;
+            padding: 20px;
             text-align: center;
             border-radius: 12px;
-            margin: 30px auto;
+            margin: 40px auto;
             max-width: 900px;
-            box-shadow: 0 8px 20px rgba(255, 107, 107, 0.3);
+            box-shadow: 0 10px 25px rgba(245, 158, 11, 0.3);
             position: relative;
             overflow: hidden;
             animation: pulse 2s infinite ease-in-out;
+            border: 2px dashed rgba(255, 255, 255, 0.3);
         }
         
         .promo-banner::after {
@@ -129,15 +136,15 @@
         }
         
         .promo-banner h2 {
-            font-size: 1.8rem;
-            margin-bottom: 5px;
+            font-size: 2rem;
+            margin-bottom: 10px;
             position: relative;
             z-index: 1;
         }
         
         .promo-banner p {
-            font-size: 1.1rem;
-            opacity: 0.9;
+            font-size: 1.2rem;
+            opacity: 0.95;
             position: relative;
             z-index: 1;
         }
@@ -146,47 +153,66 @@
         .countdown-container {
             background: white;
             border-radius: 16px;
-            padding: 25px;
-            margin: 40px auto;
+            padding: 30px;
+            margin: 50px auto;
             max-width: 800px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
             text-align: center;
+            border: 1px solid #E5E7EB;
         }
         
         .countdown-title {
-            font-size: 1.3rem;
-            color: var(--dark);
-            margin-bottom: 20px;
-            font-weight: 600;
+            font-size: 1.5rem;
+            color: var(--darker);
+            margin-bottom: 25px;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
         }
         
         .countdown-timer {
             display: flex;
             justify-content: center;
-            gap: 15px;
+            gap: 20px;
         }
         
         .countdown-item {
-            background: var(--gradient);
+            background: var(--darker);
             color: white;
             border-radius: 12px;
-            padding: 15px 10px;
-            min-width: 80px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px 15px;
+            min-width: 100px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .countdown-item::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
         }
         
         .countdown-value {
-            font-size: 2rem;
+            font-size: 2.5rem;
             font-weight: 700;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Poppins', sans-serif;
             line-height: 1;
+            position: relative;
+            z-index: 1;
         }
         
         .countdown-label {
-            font-size: 0.8rem;
-            opacity: 0.8;
+            font-size: 0.9rem;
+            opacity: 0.9;
             text-transform: uppercase;
-            margin-top: 5px;
+            margin-top: 8px;
+            letter-spacing: 1px;
+            position: relative;
+            z-index: 1;
         }
         
         /* Main Content */
@@ -194,7 +220,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 30px;
-            margin-bottom: 50px;
+            margin-bottom: 60px;
         }
         
         /* Benefits Section */
@@ -202,46 +228,49 @@
             flex: 1;
             min-width: 300px;
             background: white;
-            padding: 30px;
+            padding: 40px 30px;
             border-radius: 16px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            border: 1px solid #E5E7EB;
         }
         
         .section-title {
-            font-size: 1.8rem;
-            color: var(--primary);
-            margin-bottom: 25px;
+            font-size: 2rem;
+            color: var(--darker);
+            margin-bottom: 30px;
             font-weight: 700;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Poppins', sans-serif;
             text-align: center;
             position: relative;
-            padding-bottom: 10px;
         }
         
         .section-title::after {
             content: '';
             position: absolute;
-            bottom: 0;
+            bottom: -10px;
             left: 50%;
             transform: translateX(-50%);
-            width: 80px;
+            width: 100px;
             height: 4px;
-            background: var(--accent);
+            background: var(--gradient);
             border-radius: 2px;
         }
         
         .benefit-item {
             display: flex;
             align-items: flex-start;
-            margin-bottom: 20px;
-            padding: 15px;
+            margin-bottom: 25px;
+            padding: 20px;
             border-radius: 12px;
             transition: all 0.3s ease;
+            background: #F9FAFB;
+            border-left: 4px solid var(--primary);
         }
         
         .benefit-item:hover {
-            background: rgba(67, 97, 238, 0.05);
-            transform: translateY(-3px);
+            background: white;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(59, 130, 246, 0.1);
         }
         
         .benefit-icon {
@@ -256,18 +285,20 @@
             font-size: 1.5rem;
             margin-right: 20px;
             flex-shrink: 0;
-            box-shadow: 0 4px 6px rgba(67, 97, 238, 0.2);
+            box-shadow: 0 4px 6px rgba(59, 130, 246, 0.2);
         }
         
         .benefit-content h3 {
-            font-size: 1.2rem;
-            margin-bottom: 8px;
-            color: var(--dark);
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--darker);
+            font-weight: 600;
         }
         
         .benefit-content p {
-            color: #64748b;
-            font-size: 0.95rem;
+            color: var(--gray);
+            font-size: 1rem;
+            line-height: 1.6;
         }
         
         /* Registration Section */
@@ -275,11 +306,12 @@
             flex: 1;
             min-width: 300px;
             background: white;
-            padding: 30px;
+            padding: 40px 30px;
             border-radius: 16px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
             position: relative;
             overflow: hidden;
+            border: 1px solid #E5E7EB;
         }
         
         .registration::before {
@@ -293,30 +325,35 @@
         }
         
         .registration-title {
-            font-size: 1.8rem;
-            color: var(--secondary);
-            margin-bottom: 20px;
+            font-size: 2rem;
+            color: var(--darker);
+            margin-bottom: 25px;
             font-weight: 700;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Poppins', sans-serif;
             text-align: center;
         }
         
         .registration-steps {
-            margin-bottom: 25px;
+            margin-bottom: 30px;
         }
         
         .step {
             display: flex;
             align-items: center;
             margin-bottom: 15px;
-            padding: 12px 15px;
-            background: #f8fafc;
+            padding: 15px 20px;
+            background: #F9FAFB;
             border-radius: 10px;
             border-left: 4px solid var(--primary);
+            transition: all 0.3s ease;
+        }
+        
+        .step:hover {
+            transform: translateX(5px);
         }
         
         .step-number {
-            background: var(--primary);
+            background: var(--darker);
             color: white;
             width: 30px;
             height: 30px;
@@ -327,48 +364,54 @@
             font-weight: 700;
             margin-right: 15px;
             flex-shrink: 0;
+            font-family: 'Poppins', sans-serif;
         }
         
         .step-text {
-            font-size: 0.95rem;
+            font-size: 1rem;
+            font-weight: 500;
         }
         
         .registration-link {
-            background: #f1f5f9;
-            padding: 15px;
+            background: #F3F4F6;
+            padding: 20px;
             border-radius: 10px;
-            margin: 20px 0;
+            margin: 25px 0;
             word-break: break-all;
             font-family: monospace;
-            font-size: 1rem;
+            font-size: 1.1rem;
             text-align: center;
             position: relative;
-            border: 1px dashed #cbd5e1;
+            border: 2px dashed #D1D5DB;
+            font-weight: 600;
+            color: var(--primary-dark);
         }
         
         .registration-link::before {
-            content: 'Link đăng ký';
+            content: 'Link đăng ký độc quyền';
             position: absolute;
-            top: -10px;
-            left: 15px;
+            top: -12px;
+            left: 20px;
             background: white;
-            padding: 0 5px;
-            font-size: 0.8rem;
-            color: #64748b;
-            font-family: 'Nunito', sans-serif;
+            padding: 0 10px;
+            font-size: 0.9rem;
+            color: var(--gray);
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
         }
         
         .note {
-            background: #fff4e6;
-            padding: 12px;
+            background: #FFFBEB;
+            padding: 15px;
             border-radius: 8px;
-            border-left: 4px solid var(--warning);
-            margin: 20px 0;
-            font-size: 0.9rem;
+            border-left: 4px solid var(--accent);
+            margin: 25px 0;
+            font-size: 0.95rem;
+            color: var(--darker);
         }
         
         .note strong {
-            color: var(--warning);
+            color: var(--accent);
         }
         
         /* Buttons */
@@ -376,11 +419,11 @@
             display: inline-block;
             background: var(--gradient);
             color: white;
-            padding: 16px 30px;
+            padding: 18px 30px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 700;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             transition: all 0.3s ease;
             border: none;
             cursor: pointer;
@@ -388,12 +431,15 @@
             width: 100%;
             position: relative;
             overflow: hidden;
-            box-shadow: 0 4px 15px rgba(67, 97, 238, 0.3);
+            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+            font-family: 'Poppins', sans-serif;
+            letter-spacing: 0.5px;
         }
         
         .btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(67, 97, 238, 0.4);
+            box-shadow: 0 15px 30px rgba(59, 130, 246, 0.4);
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
         }
         
         .btn:active {
@@ -401,35 +447,47 @@
         }
         
         .btn i {
-            margin-right: 8px;
+            margin-right: 10px;
         }
         
         .btn-secondary {
-            background: linear-gradient(to right, var(--accent), #3a86ff);
-            box-shadow: 0 4px 15px rgba(76, 201, 240, 0.3);
+            background: var(--gradient-accent);
+            box-shadow: 0 10px 20px rgba(245, 158, 11, 0.3);
         }
         
         .btn-secondary:hover {
-            box-shadow: 0 8px 20px rgba(76, 201, 240, 0.4);
+            box-shadow: 0 15px 30px rgba(245, 158, 11, 0.4);
+            background: linear-gradient(135deg, #F97316, var(--accent));
+        }
+        
+        .btn-danger {
+            background: linear-gradient(135deg, var(--danger), #DC2626);
+            box-shadow: 0 10px 20px rgba(239, 68, 68, 0.3);
+        }
+        
+        .btn-danger:hover {
+            box-shadow: 0 15px 30px rgba(239, 68, 68, 0.4);
+            background: linear-gradient(135deg, #DC2626, var(--danger));
         }
         
         /* Video Section */
         .video-section {
             background: white;
-            padding: 50px 20px;
+            padding: 60px 20px;
             border-radius: 16px;
-            margin: 50px auto;
+            margin: 60px auto;
             max-width: 1000px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
             text-align: center;
+            border: 1px solid #E5E7EB;
         }
         
         .video-title {
-            font-size: 1.8rem;
-            color: var(--dark);
-            margin-bottom: 30px;
+            font-size: 2rem;
+            color: var(--darker);
+            margin-bottom: 40px;
             font-weight: 700;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Poppins', sans-serif;
             position: relative;
             display: inline-block;
         }
@@ -437,12 +495,12 @@
         .video-title::after {
             content: '';
             position: absolute;
-            bottom: -10px;
+            bottom: -15px;
             left: 50%;
             transform: translateX(-50%);
-            width: 80px;
+            width: 100px;
             height: 4px;
-            background: var(--accent);
+            background: var(--gradient);
             border-radius: 2px;
         }
         
@@ -454,8 +512,9 @@
             max-width: 800px;
             margin: 0 auto;
             border-radius: 16px;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
             background: #000;
+            border: 1px solid #E5E7EB;
         }
         
         .video-wrapper iframe {
@@ -470,48 +529,54 @@
         /* Testimonials */
         .testimonials {
             background: white;
-            padding: 50px 20px;
+            padding: 60px 20px;
             border-radius: 16px;
-            margin: 50px auto;
+            margin: 60px auto;
             max-width: 1000px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            border: 1px solid #E5E7EB;
         }
         
         .testimonial-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 25px;
-            margin-top: 30px;
+            gap: 30px;
+            margin-top: 40px;
         }
         
         .testimonial-card {
-            background: #f8fafc;
-            padding: 25px;
+            background: white;
+            padding: 30px;
             border-radius: 16px;
             border-left: 5px solid var(--primary);
             transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border: 1px solid #E5E7EB;
         }
         
         .testimonial-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
         }
         
         .testimonial-text {
             font-style: italic;
-            margin-bottom: 20px;
-            color: #475569;
+            margin-bottom: 25px;
+            color: var(--dark);
             position: relative;
+            font-size: 1rem;
+            line-height: 1.7;
         }
         
         .testimonial-text::before {
             content: '"';
-            font-size: 3rem;
-            color: rgba(67, 97, 238, 0.1);
+            font-size: 4rem;
+            color: rgba(59, 130, 246, 0.1);
             position: absolute;
-            top: -15px;
-            left: -10px;
+            top: -25px;
+            left: -15px;
             font-family: serif;
+            line-height: 1;
         }
         
         .testimonial-author {
@@ -520,8 +585,8 @@
         }
         
         .author-avatar {
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
             background: var(--gradient);
             display: flex;
@@ -529,28 +594,32 @@
             justify-content: center;
             color: white;
             font-weight: 700;
-            margin-right: 15px;
+            font-size: 1.5rem;
+            margin-right: 20px;
             flex-shrink: 0;
+            font-family: 'Poppins', sans-serif;
         }
         
         .author-info h4 {
-            font-size: 1.1rem;
-            color: var(--dark);
+            font-size: 1.2rem;
+            color: var(--darker);
+            font-weight: 600;
         }
         
         .author-info p {
-            font-size: 0.8rem;
-            color: #64748b;
+            font-size: 0.9rem;
+            color: var(--gray);
         }
         
         /* FAQ */
         .faq-section {
             background: white;
-            padding: 50px 20px;
+            padding: 60px 20px;
             border-radius: 16px;
-            margin: 50px auto;
+            margin: 60px auto;
             max-width: 1000px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            border: 1px solid #E5E7EB;
         }
         
         .faq-item {
@@ -558,35 +627,39 @@
             border-radius: 12px;
             overflow: hidden;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            border: 1px solid #E5E7EB;
         }
         
         .faq-question {
-            background: #f8fafc;
-            padding: 18px 20px;
+            background: #F9FAFB;
+            padding: 20px 25px;
             font-weight: 700;
-            color: var(--dark);
+            color: var(--darker);
             cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
             transition: all 0.3s ease;
+            font-size: 1.1rem;
         }
         
         .faq-question:hover {
-            background: #f1f5f9;
+            background: #F3F4F6;
         }
         
         .faq-question i {
             transition: transform 0.3s ease;
+            color: var(--gray);
         }
         
         .faq-answer {
-            padding: 0 20px;
+            padding: 0 25px;
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.3s ease, padding 0.3s ease;
             background: white;
-            color: #64748b;
+            color: var(--gray);
+            line-height: 1.7;
         }
         
         .faq-item.active .faq-question {
@@ -595,52 +668,56 @@
         }
         
         .faq-item.active .faq-question i {
+            color: white;
             transform: rotate(180deg);
         }
         
         .faq-item.active .faq-answer {
-            max-height: 300px;
-            padding: 20px;
+            max-height: 500px;
+            padding: 25px;
         }
         
         /* CTA Section */
         .cta-section {
             text-align: center;
-            margin: 60px 0;
+            margin: 80px 0;
         }
         
         .cta-title {
-            font-size: 2rem;
-            color: var(--dark);
+            font-size: 2.5rem;
+            color: var(--darker);
             margin-bottom: 20px;
             font-weight: 700;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
         
         .cta-subtitle {
-            font-size: 1.1rem;
-            color: #64748b;
-            margin-bottom: 30px;
-            max-width: 600px;
+            font-size: 1.3rem;
+            color: var(--gray);
+            margin-bottom: 40px;
+            max-width: 700px;
             margin-left: auto;
             margin-right: auto;
+            line-height: 1.7;
         }
         
         .btn-cta {
             display: inline-block;
             max-width: 400px;
             margin: 0 auto;
-            font-size: 1.2rem;
-            padding: 18px 40px;
+            font-size: 1.3rem;
+            padding: 20px 40px;
         }
         
         /* Footer */
         footer {
-            background: var(--dark);
-            color: #94a3b8;
-            padding: 40px 0;
+            background: var(--darker);
+            color: #9CA3AF;
+            padding: 60px 0 40px;
             text-align: center;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
+            clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+            margin-top: 80px;
         }
         
         .footer-content {
@@ -648,31 +725,73 @@
             margin: 0 auto;
         }
         
+        .footer-logo {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+        
         .footer-links {
             display: flex;
             justify-content: center;
-            gap: 20px;
-            margin: 20px 0;
+            gap: 25px;
+            margin: 30px 0;
+            flex-wrap: wrap;
         }
         
         .footer-links a {
-            color: #cbd5e1;
+            color: #D1D5DB;
             text-decoration: none;
             transition: color 0.3s ease;
+            font-weight: 500;
         }
         
         .footer-links a:hover {
             color: white;
         }
         
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .social-links a {
+            color: white;
+            background: rgba(255, 255, 255, 0.1);
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+        
         .copyright {
-            margin-top: 20px;
+            margin-top: 30px;
+            color: #6B7280;
+            line-height: 1.7;
         }
         
         /* Responsive */
         @media (max-width: 768px) {
+            .hero {
+                padding: 60px 0 40px;
+                clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+            }
+            
             .logo {
-                font-size: 2rem;
+                font-size: 2.2rem;
             }
             
             .tagline {
@@ -680,7 +799,7 @@
             }
             
             .promo-banner h2 {
-                font-size: 1.4rem;
+                font-size: 1.5rem;
             }
             
             .promo-banner p {
@@ -692,16 +811,55 @@
             }
             
             .countdown-item {
-                min-width: 70px;
-                padding: 10px 5px;
+                min-width: 80px;
+                padding: 15px 10px;
             }
             
             .countdown-value {
-                font-size: 1.5rem;
+                font-size: 2rem;
             }
             
             .main-content {
                 flex-direction: column;
+            }
+            
+            .section-title, .registration-title {
+                font-size: 1.8rem;
+            }
+            
+            .video-title, .cta-title {
+                font-size: 1.8rem;
+            }
+            
+            .cta-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            footer {
+                clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+                padding-top: 50px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 1.8rem;
+            }
+            
+            .tagline {
+                font-size: 1.1rem;
+            }
+            
+            .promo-banner h2 {
+                font-size: 1.3rem;
+            }
+            
+            .countdown-item {
+                min-width: 70px;
+            }
+            
+            .countdown-value {
+                font-size: 1.8rem;
             }
             
             .section-title, .registration-title {
@@ -711,6 +869,22 @@
             .video-title, .cta-title {
                 font-size: 1.5rem;
             }
+            
+            .footer-links {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+        
+        /* Animation */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .floating {
+            animation: float 3s ease-in-out infinite;
         }
     </style>
 </head>
@@ -718,16 +892,16 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content container">
-            <div class="logo">PARTNER PROGRAM</div>
-            <div class="tagline">CƠ HỘI KIẾM TIỀN MIỄN PHÍ CỰC NGON 2025</div>
+            <div class="logo">CHƯƠNG TRÌNH ĐỐI TÁC</div>
+            <div class="tagline">Nhận ngay 100K khi đăng ký - Không cần nạp tiền - Không yêu cầu phức tạp</div>
         </div>
     </section>
     
     <!-- Promo Banner -->
     <div class="container">
         <div class="promo-banner">
-            <h2>🎉 ĐĂNG KÝ NHẬN NGAY 100K - KHÔNG CẦN NẠP TIỀN 🎉</h2>
-            <p>CHƯA TỪNG CÓ TIỀN LỆ - ƯU ĐÃI CÓ THỂ KẾT THÚC SỚM!</p>
+            <h2>🔥 ƯU ĐÃI ĐẶC BIỆT - ĐĂNG KÝ NGAY HÔM NAY 🔥</h2>
+            <p>Chỉ còn 5 ngày để nhận 100K miễn phí vào tài khoản!</p>
         </div>
     </div>
     
@@ -735,11 +909,11 @@
     <div class="container">
         <div class="countdown-container">
             <div class="countdown-title">
-                <i class="fas fa-clock"></i> CHƯƠNG TRÌNH KẾT THÚC SAU:
+                <i class="fas fa-clock"></i> THỜI GIAN KẾT THÚC CHƯƠNG TRÌNH:
             </div>
             <div class="countdown-timer">
                 <div class="countdown-item">
-                    <div class="countdown-value" id="days">09</div>
+                    <div class="countdown-value" id="days">05</div>
                     <div class="countdown-label">Ngày</div>
                 </div>
                 <div class="countdown-item">
@@ -763,7 +937,7 @@
         <div class="main-content">
             <!-- Benefits Section -->
             <div class="benefits">
-                <h2 class="section-title">🔥 TẠI SAO BẠN NÊN THAM GIA?</h2>
+                <h2 class="section-title">LỢI ÍCH KHI THAM GIA</h2>
                 
                 <div class="benefit-item">
                     <div class="benefit-icon">
@@ -771,7 +945,7 @@
                     </div>
                     <div class="benefit-content">
                         <h3>Nhận ngay 100K khi đăng ký</h3>
-                        <p>Số tiền sẽ được cộng trực tiếp vào tài khoản và có thể rút khi đạt ngưỡng 500K.</p>
+                        <p>Chỉ cần đăng ký và hoàn thành hồ sơ, bạn sẽ nhận ngay 100.000 VNĐ vào tài khoản mà không cần bất kỳ điều kiện nào.</p>
                     </div>
                 </div>
                 
@@ -780,8 +954,8 @@
                         <i class="fas fa-wallet"></i>
                     </div>
                     <div class="benefit-content">
-                        <h3>Không cần nạp tiền - Không mất phí</h3>
-                        <p>Chỉ cần đăng ký bằng Gmail là có thể bắt đầu kiếm tiền ngay lập tức.</p>
+                        <h3>Không cần nạp tiền</h3>
+                        <p>Bạn không cần phải nạp tiền hay chi trả bất kỳ khoản phí nào để nhận được ưu đãi này.</p>
                     </div>
                 </div>
                 
@@ -790,8 +964,8 @@
                         <i class="fas fa-users"></i>
                     </div>
                     <div class="benefit-content">
-                        <h3>Nhận thêm 20K mỗi lượt mời bạn bè</h3>
-                        <p>Mời càng nhiều người tham gia, thu nhập của bạn càng tăng nhanh.</p>
+                        <h3>Kiếm thêm 20K mỗi người mời</h3>
+                        <p>Mỗi người bạn mời tham gia thành công, bạn sẽ nhận thêm 20.000 VNĐ vào tài khoản.</p>
                     </div>
                 </div>
                 
@@ -801,7 +975,7 @@
                     </div>
                     <div class="benefit-content">
                         <h3>Thao tác đơn giản</h3>
-                        <p>Chỉ vài bước đăng ký cơ bản là có thể bắt đầu kiếm tiền ngay.</p>
+                        <p>Chỉ mất 2 phút để đăng ký và nhận tiền thưởng ngay lập tức.</p>
                     </div>
                 </div>
                 
@@ -810,16 +984,16 @@
                         <i class="fas fa-shield-alt"></i>
                     </div>
                     <div class="benefit-content">
-                        <h3>Không cần xác minh</h3>
-                        <p>Đăng ký hợp lệ là nhận tiền ngay, không yêu cầu phức tạp.</p>
+                        <h3>Bảo mật thông tin</h3>
+                        <p>Chúng tôi cam kết bảo mật thông tin cá nhân của bạn tuyệt đối.</p>
                     </div>
                 </div>
             </div>
             
             <!-- Registration Section -->
             <div class="registration">
-                <h2 class="registration-title">🚀 ĐĂNG KÝ NGAY!</h2>
-                <p style="text-align: center; margin-bottom: 20px;">Nhận ngay <span style="font-weight: 700; color: var(--primary);">100.000 VNĐ</span> vào tài khoản khi đăng ký qua link này:</p>
+                <h2 class="registration-title">ĐĂNG KÝ NHẬN NGAY 100K</h2>
+                <p style="text-align: center; margin-bottom: 25px; font-size: 1.1rem;">Nhận ngay <span style="font-weight: 700; color: var(--primary);">100.000 VNĐ</span> vào tài khoản khi đăng ký qua link độc quyền này:</p>
                 
                 <div class="registration-steps">
                     <div class="step">
@@ -845,14 +1019,14 @@
                 </div>
                 
                 <div class="note">
-                    <strong><i class="fas fa-exclamation-circle"></i> Lưu ý quan trọng:</strong> Sau khi đăng ký, hãy hoàn thành 100% hồ sơ cá nhân để đủ điều kiện nhận thưởng.
+                    <strong><i class="fas fa-exclamation-circle"></i> Lưu ý quan trọng:</strong> Bạn cần hoàn thành 100% hồ sơ cá nhân sau khi đăng ký để đủ điều kiện nhận thưởng 100K.
                 </div>
                 
                 <a href="https://pmcloud1.com/ql/MbvOCa" class="btn">
-                    <i class="fas fa-user-plus"></i> ĐĂNG KÝ NHẬN NGAY 100K
+                    <i class="fas fa-user-plus"></i> ĐĂNG KÝ NGAY - NHẬN 100K
                 </a>
                 
-                <p style="text-align: center; margin-top: 15px; font-size: 0.9rem; color: #64748b;">
+                <p style="text-align: center; margin-top: 20px; font-size: 0.95rem; color: var(--gray);">
                     <i class="fas fa-lock"></i> Thông tin của bạn được bảo mật tuyệt đối
                 </p>
             </div>
@@ -862,70 +1036,117 @@
     <!-- Video Section -->
     <div class="container">
         <div class="video-section">
-            <h2 class="video-title"><i class="fas fa-play-circle"></i> HƯỚNG DẪN ĐĂNG KÝ & NHẬN THƯỞNG</h2>
+            <h2 class="video-title"><i class="fas fa-play-circle"></i> HƯỚNG DẪN ĐĂNG KÝ CHI TIẾT</h2>
             <div class="video-wrapper">
-                <iframe src="https://shopviaclone24h.com/videoaff/aff.MP4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://ictu.io.vn/aff.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
     
-    <!-- Testimonials -->
-    <div class="container">
-        <div class="testimonials">
-            <h2 class="section-title">💬 CẢM NHẬN CỦA THÀNH VIÊN</h2>
-            <div class="testimonial-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-text">
-                        "Mình đã nhận được 100K ngay sau khi đăng ký và hoàn thành hồ sơ. Thật không thể tin được khi kiếm tiền dễ dàng như vậy!"
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">NV</div>
-                        <div class="author-info">
-                            <h4>Nguyễn Văn Nam</h4>
-                            <p>Hà Nội - Thành viên từ 05/2025</p>
-                        </div>
+<!-- Testimonials -->
+<div class="container">
+    <div class="testimonials">
+        <h2 class="section-title">TRẢI NGHIỆM THỰC TẾ</h2>
+        <div class="testimonial-grid">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+                <div class="testimonial-text">
+                    "Ban đầu mình cũng nghi ngờ vì nhiều chương trình ảo, nhưng sau 2 ngày đăng ký và mời 5 người bạn, mình đã rút thành công 1.2 triệu đồng. Thật sự bất ngờ!"
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">PM</div>
+                    <div class="author-info">
+                        <h4>Phạm Minh Thế</h4>
+                        <p>Đà Lạt - Thành viên từ 03/2025</p>
                     </div>
                 </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-text">
-                        "Chỉ sau 3 ngày mời bạn bè, mình đã kiếm được hơn 2 triệu đồng. Cảm ơn Partner Program đã mang đến cơ hội tuyệt vời này!"
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">TT</div>
-                        <div class="author-info">
-                            <h4>Nguyên Thị Nhi</h4>
-                            <p>TP.HCM - Thành viên từ 04/2025</p>
-                        </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+                <div class="testimonial-text">
+                    "Mình là sinh viên nên rất cần thêm thu nhập. Chỉ với điện thoại và 30 phút mỗi ngày chia sẻ link, mình kiếm được 3.5 triệu trong 2 tuần. Đủ tiền đóng học phí!"
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">NT</div>
+                    <div class="author-info">
+                        <h4>Nguyễn Thị Hoa</h4>
+                        <p>Cần Thơ - Sinh viên ĐH Tây Đô</p>
                     </div>
                 </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-text">
-                        "Đơn giản, dễ làm mà hiệu quả. Mình đã rút được 1.5 triệu đồng sau 1 tuần tham gia. Sẽ tiếp tục mời thêm bạn bè để tăng thu nhập."
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+                <div class="testimonial-text">
+                    "Tôi đã thử nhiều chương trình kiếm tiền online nhưng đây là lần đầu tiên rút được tiền thật. Nhân viên hỗ trợ nhiệt tình, quy trình minh bạch. 10 điểm!"
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">LV</div>
+                    <div class="author-info">
+                        <h4>Lê Văn Khoa</h4>
+                        <p>Hải Phòng - Nhân viên văn phòng</p>
                     </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">LV</div>
-                        <div class="author-info">
-                            <h4>Lê Văn Thanh</h4>
-                            <p>Đà Nẵng - Thành viên từ 06/2025</p>
-                        </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="testimonial-card">
+                <div class="testimonial-text">
+                    "Mình làm thêm ngoài giờ hành chính. Chỉ cần chia sẻ link lên Facebook và Zalo, sau 1 tuần có ngay 2.7 triệu. Không ngờ kiếm tiền dễ dàng thế này!"
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">HT</div>
+                    <div class="author-info">
+                        <h4>Hoàng Thị Ngân</h4>
+                        <p>Vũng Tàu - Kế toán</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 5 -->
+            <div class="testimonial-card">
+                <div class="testimonial-text">
+                    "Đã verify 100K ngay sau đăng ký. Mình dùng tiền này để tiếp tục mời thêm bạn bè. Hiệu ứng lan truyền cực mạnh, thu nhập thụ động tăng đều mỗi ngày!"
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">TC</div>
+                    <div class="author-info">
+                        <h4>Trần Công Đức</h4>
+                        <p>Nha Trang - Freelancer</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 6 -->
+            <div class="testimonial-card">
+                <div class="testimonial-text">
+                    "Lúc đầu chỉ đăng ký cho vui, ai ngờ tháng đầu tiên đã kiếm được 8.6 triệu. Giờ mình tập trung phát triển nhóm và có thu nhập ổn định từ chương trình này."
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">NK</div>
+                    <div class="author-info">
+                        <h4>Nguyễn Kim Anh</h4>
+                        <p>Quy Nhơn - Chủ shop online</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
     
     <!-- FAQ -->
     <div class="container">
         <div class="faq-section">
-            <h2 class="section-title">❓ CÂU HỎI THƯỜNG GẶP</h2>
+            <h2 class="section-title">CÂU HỎI THƯỜNG GẶP</h2>
             
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>Làm thế nào để nhận được 100K khi đăng ký?</span>
+                    <span>Tôi có thực sự nhận được 100K khi đăng ký không?</span>
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    Bạn chỉ cần đăng ký qua link giới thiệu này, sau đó hoàn thành 100% hồ sơ cá nhân trong tài khoản. 100K sẽ được cộng tự động vào tài khoản của bạn ngay lập tức.
+                    <p>Hoàn toàn có! Chúng tôi cam kết bạn sẽ nhận ngay 100.000 VNĐ vào tài khoản sau khi đăng ký và hoàn thành 100% hồ sơ cá nhân. Bạn có thể kiểm tra số dư ngay sau khi hoàn tất.</p>
                 </div>
             </div>
             
@@ -935,7 +1156,7 @@
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    Bạn có thể rút tiền khi đạt mức tối thiểu 500K. Số tiền 100K nhận ngay khi đăng ký sẽ được cộng dồn vào tổng số tiền rút của bạn.
+                    <p>Bạn có thể rút tiền khi đạt mức tối thiểu 500.000 VNĐ. Số tiền 100K nhận ngay khi đăng ký sẽ được cộng dồn vào tổng số tiền rút của bạn. Thời gian xử lý rút tiền là 24-48 giờ làm việc.</p>
                 </div>
             </div>
             
@@ -945,17 +1166,7 @@
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    Không có giới hạn số lượng người bạn có thể mời. Mỗi người đăng ký thành công qua link của bạn, bạn sẽ nhận ngay 20K vào tài khoản.
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>Chương trình này kéo dài đến khi nào?</span>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    Chương trình ưu đãi 100K cho người đăng ký mới có thể kết thúc bất cứ lúc nào mà không cần báo trước. Chúng tôi khuyên bạn nên đăng ký sớm để không bỏ lỡ cơ hội này.
+                    <p>Không có giới hạn số lượng người bạn có thể mời. Mỗi người đăng ký thành công qua link của bạn, bạn sẽ nhận ngay 20.000 VNĐ vào tài khoản. Thu nhập của bạn phụ thuộc vào số người bạn mời được.</p>
                 </div>
             </div>
             
@@ -965,7 +1176,17 @@
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    Bạn chỉ cần có một địa chỉ Gmail hợp lệ và hoàn thành hồ sơ cá nhân sau khi đăng ký. Không yêu cầu nạp tiền hay bất kỳ chi phí nào khác.
+                    <p>Bạn chỉ cần có một địa chỉ Gmail hợp lệ và hoàn thành hồ sơ cá nhân sau khi đăng ký. Không yêu cầu nạp tiền hay bất kỳ chi phí nào khác. Thiết bị có kết nối internet là đủ để tham gia.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Chương trình này kéo dài đến khi nào?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Chương trình ưu đãi 100K cho người đăng ký mới chỉ áp dụng trong 5 ngày tới. Sau thời gian này, chúng tôi có thể ngừng hoặc thay đổi chính sách thưởng mà không cần báo trước.</p>
                 </div>
             </div>
         </div>
@@ -974,36 +1195,56 @@
     <!-- CTA Section -->
     <div class="container">
         <div class="cta-section">
-            <h2 class="cta-title">ĐĂNG KÝ NGAY ĐỂ NHẬN 100K</h2>
-            <p class="cta-subtitle">Cơ hội kiếm tiền miễn phí tốt nhất 2025. Đừng bỏ lỡ!</p>
+            <h2 class="cta-title">ĐĂNG KÝ NGAY - NHẬN NGAY 100K</h2>
+            <p class="cta-subtitle">Cơ hội kiếm tiền miễn phí tốt nhất 2025. Chỉ còn 5 ngày để nhận ưu đãi đặc biệt này!</p>
             <a href="https://pmcloud1.com/ql/MbvOCa" class="btn btn-secondary btn-cta">
                 <i class="fas fa-gift"></i> NHẬN NGAY 100.000 VNĐ
             </a>
+            <p style="text-align: center; margin-top: 20px; color: var(--gray); font-size: 0.9rem;">
+                <i class="fas fa-exclamation-triangle"></i> Ưu đãi có thể kết thúc sớm hơn dự kiến
+            </p>
         </div>
     </div>
     
     <!-- Footer -->
     <footer>
         <div class="footer-content container">
+            <div class="footer-logo">PARTNER PROGRAM</div>
+            
             <div class="footer-links">
                 <a href="#">Điều khoản dịch vụ</a>
                 <a href="#">Chính sách bảo mật</a>
                 <a href="#">Hỗ trợ</a>
                 <a href="#">Liên hệ</a>
             </div>
+            
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-zalo"></i></a>
+            </div>
+            
             <div class="copyright">
                 © 2025 Partner Program. Tất cả các quyền được bảo lưu.<br>
-                Đây là chương trình khuyến mãi có thời hạn, áp dụng điều kiện và điều khoản.
+                Đây là chương trình khuyến mãi có thời hạn, áp dụng điều kiện và điều khoản.<br>
+                Liên hệ hỗ trợ: support@partnerprogram.vn
+            </div>
+            
+            <div style="margin-top: 30px; font-size: 0.8rem; color: #4B5563;">
+                <p>Nhóm hỗ trợ:</p>
+                <p>Telegram: <a href="https://t.me/dichvumeta" style="color: #93C5FD;">https://t.me/dichvumeta</a></p>
+                <p>Zalo: <a href="https://zalo.me/g/ncbwdf702" style="color: #93C5FD;">https://zalo.me/g/ncbwdf702</a></p>
             </div>
         </div>
     </footer>
     
     <script>
-        // 10-Day Countdown Timer
+        // 5-Day Countdown Timer
         function updateCountdown() {
             const now = new Date();
             const endDate = new Date();
-            endDate.setDate(now.getDate() + 10); // Set to 10 days from now
+            endDate.setDate(now.getDate() + 5); // Set to 5 days from now
             endDate.setHours(23, 59, 59, 0); // Set to end of day
             
             const diff = endDate - now;
@@ -1021,10 +1262,28 @@
             if (diff <= 0) {
                 clearInterval(countdownInterval);
                 document.querySelector('.countdown-container').innerHTML = `
-                    <div style="color: #ef4444; font-weight: 700; font-size: 1.5rem;">
+                    <div style="color: #EF4444; font-weight: 700; font-size: 1.8rem; padding: 20px;">
                         <i class="fas fa-exclamation-triangle"></i> CHƯƠNG TRÌNH ĐÃ KẾT THÚC
                     </div>
                 `;
+                
+                // Update all CTA buttons
+                document.querySelectorAll('.btn').forEach(btn => {
+                    btn.innerHTML = '<i class="fas fa-times-circle"></i> CHƯƠNG TRÌNH ĐÃ KẾT THÚC';
+                    btn.classList.remove('btn-secondary');
+                    btn.classList.add('btn-danger');
+                    btn.removeAttribute('href');
+                    btn.style.cursor = 'not-allowed';
+                });
+                
+                // Update promo banner
+                const promoBanner = document.querySelector('.promo-banner');
+                promoBanner.innerHTML = `
+                    <h2>⏰ CHƯƠNG TRÌNH ĐÃ KẾT THÚC</h2>
+                    <p>Cảm ơn bạn đã quan tâm đến chương trình của chúng tôi</p>
+                `;
+                promoBanner.style.background = 'linear-gradient(to right, #6B7280, #9CA3AF)';
+                promoBanner.style.animation = 'none';
             }
         }
         
@@ -1058,7 +1317,7 @@
         
         // Animate elements when they come into view
         const animateOnScroll = () => {
-            const elements = document.querySelectorAll('.benefit-item, .testimonial-card');
+            const elements = document.querySelectorAll('.benefit-item, .testimonial-card, .faq-item, .video-section, .countdown-container');
             
             elements.forEach(element => {
                 const elementPosition = element.getBoundingClientRect().top;
@@ -1072,7 +1331,7 @@
         };
         
         // Set initial state for animated elements
-        document.querySelectorAll('.benefit-item, .testimonial-card').forEach(element => {
+        document.querySelectorAll('.benefit-item, .testimonial-card, .faq-item, .video-section, .countdown-container').forEach(element => {
             element.style.opacity = '0';
             element.style.transform = 'translateY(20px)';
             element.style.transition = 'all 0.5s ease';
@@ -1080,6 +1339,10 @@
         
         window.addEventListener('scroll', animateOnScroll);
         animateOnScroll(); // Run once on page load
+        
+        // Floating animation for promo banner
+        const promoBanner = document.querySelector('.promo-banner');
+        promoBanner.classList.add('floating');
     </script>
 </body>
 </html>
